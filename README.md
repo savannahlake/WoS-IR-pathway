@@ -9,3 +9,5 @@ The process includes:
 * And finally, batch ingesting the works into the repository: Batch ingestion
 
 See the Workflow Documentation folder for steps on how to implement the workflow, and the Process Documents folder for the various materials needed for the workflow (XSLTs, spreadsheets).
+
+Thanks to the following people for developing this workflow: Stephannie Regenauer, Savannah Lake, Joseph Nicholson, and Brad Spry.
