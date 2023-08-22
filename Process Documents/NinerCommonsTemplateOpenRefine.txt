@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+<titleInfo>
+    <title>{{jsonize(cells["Title"].value)}}</title>
+  </titleInfo>
+  <note displayLabel="UNCCConstituentType">{{jsonize(cells["Constituent Type"].value)}}</note>
+  <name type="personal" authority="local">
+    <namePart>{{jsonize(cells["LeadAuthor"].value)}}</namePart>
+    <displayForm>{{jsonize(cells["Email"].value)}}</displayForm>
+    <affiliation>{{jsonize(cells["DepartmentAuthor1"].value)}}</affiliation>
+    <nameIdentifier type="orcid">{{jsonize(cells["ORCIDLead"].value)}}</nameIdentifier>
+    <role>
+      <roleTerm type="text" authority="marcrelator">author</roleTerm>
+    </role>
+  </name>
+  <name type="personal" authority="local">
+    <namePart>{{jsonize(cells["Author2"].value)}}</namePart>
+    <affiliation>{{jsonize(cells["DepartmentAuthor2"].value)}}</affiliation>
+    <nameIdentifier type="orcid">{{jsonize(cells["ORCID2"].value)}}</nameIdentifier>
+    <role>
+      <roleTerm type="text" authority="marcrelator">author</roleTerm>
+    </role>
+  </name>
+  <name type="personal" authority="local">
+    <namePart>{{jsonize(cells["Author3"].value)}}</namePart>
+    <affiliation>{{jsonize(cells["DepartmentAuthor3"].value)}}</affiliation>
+    <nameIdentifier type="orcid">{{jsonize(cells["ORCID3"].value)}}</nameIdentifier>
+    <role>
+      <roleTerm type="text" authority="marcrelator">author</roleTerm>
+    </role>
+  </name>
+  <name type="personal" authority="local">
+    <namePart>{{jsonize(cells["Author4"].value)}}</namePart>
+    <affiliation>{{jsonize(cells["DepartmentAuthor4"].value)}}</affiliation>
+    <nameIdentifier type="orcid">{{jsonize(cells["ORCID4"].value)}}</nameIdentifier>
+    <role>
+      <roleTerm type="text" authority="marcrelator">author</roleTerm>
+    </role>
+  </name>
+  <abstract>{{jsonize(cells["Abstract"].value)}}</abstract>
+  <physicalDescription>
+    <internetMediaType>application/pdf</internetMediaType>
+    <digitalOrigin>born digital</digitalOrigin>
+    <extent>1 online resource</extent>
+    <reformattingQuality>preservation</reformattingQuality>
+  </physicalDescription>
+  <location>
+    <physicalLocation>J. Murrey Atkins Library (University of North Carolina at Charlotte)</physicalLocation>
+  </location>
+  <originInfo>
+    <dateIssued encoding="w3cdtf" keyDate="yes">{{jsonize(cells["DateIssued"].value)}}</dateIssued>
+    <dateCreated encoding="w3cdtf" keyDate="yes">{{jsonize(cells["DateCreated"].value)}}</dateCreated>
+    <issuance>single unit</issuance>
+    <dateOther encoding="w3cdtf" keyDate="yes">{{jsonize(cells["DateOther"].value)}}</dateOther>
+  </originInfo>
+  <subject authority="fast" valueURI={{jsonize(cells["URI--Topics 1"].value)}}>
+    <topic>{{jsonize(cells["Subjects--Topics 1"].value)}}</topic>
+  </subject>
+  <subject authority="fast" valueURI={{jsonize(cells["URI--Topics 2"].value)}}>
+    <topic>{{jsonize(cells["Subjects--Topics 2"].value)}}</topic>
+  </subject>
+  <subject authority="fast" valueURI={{jsonize(cells["URI--Topics 3"].value)}}>
+    <topic>{{jsonize(cells["Subjects--Topics 3"].value)}}</topic>
+  </subject>
+  <subject authority="fast" valueURI={{jsonize(cells["URI--Topics 4"].value)}}>
+     <topic>{{jsonize(cells["Subjects--Topics 4"].value)}}</topic>
+  </subject>
+  <subject authority="fast" valueURI={{jsonize(cells["URI--Topics 5"].value)}}>
+     <topic>{{jsonize(cells["Subjects--Topics 5"].value)}}</topic>
+  </subject>
+  <genre valueURI={{jsonize(cells["URI--Genre1"].value)}}>{{jsonize(cells["Genre1"].value)}}</genre>
+  <genre valueURI={{jsonize(cells["URI--Genre2"].value)}}>{{jsonize(cells["Genre2"].value)}}</genre>
+  <language>
+    <languageTerm authority="iso639-2b" type="text">English</languageTerm>
+  </language>
+  <typeOfResource>{{jsonize(cells["TypeOfResource"].value)}}</typeOfResource>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>{{jsonize(cells["JournalTitle"].value)}}</title>
+    </titleInfo>
+    <identifier type="issn">{{jsonize(cells["ISSN"].value)}}</identifier>
+    <part>
+      <detail type="volume">
+        <number>{{jsonize(cells["VolumeNumber"].value)}}</number>
+      </detail>
+      <detail type="issue">
+        <number>{{jsonize(cells["IssueNumber"].value)}}</number>
+        <caption>issue</caption>
+      </detail>
+      <extent unit="page">
+        <start>{{jsonize(cells["PagesStart"].value)}}</start>
+        <end>{{jsonize(cells["PagesEnd"].value)}}</end>
+      </extent>
+      <date>{{jsonize(cells["DateJournal"].value)}}</date>
+    </part>
+  </relatedItem>
+  <identifier type="doi">{{jsonize(cells["IdentifierDoi"].value)}}</identifier>
+  <identifier type="uri">{{jsonize(cells["IdentifierURI"].value)}}</identifier>
+  <identifier type="local">{{jsonize(cells["IdentifierFilename"].value)}}</identifier>
+  <accessCondition displayLabel="local" type="use and reproduction">This item may be protected by copyright and other related rights. Atkins Library provides access to this item for educational and research purposes only; other uses require the permission of the copyright holder.</accessCondition>
+  <recordInfo>
+    <recordCreationDate>{{jsonize(cells["RecordCreationDate"].value)}}</recordCreationDate>
+    <recordContentSource>NKM</recordContentSource>
+    <languageOfCataloging>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+    </languageOfCataloging>
+    <recordInfoNote>Record created for NinerCommons IR through batch ingest process.</recordInfoNote>
+  </recordInfo>
+</mods>
+</modsCollection>
